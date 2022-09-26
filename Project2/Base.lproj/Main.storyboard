@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y3S-Rk-2GR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y3S-Rk-2GR">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,6 +19,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7h-AO-n7c">
                                 <rect key="frame" x="102" y="100" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T7h-AO-n7c" secondAttribute="height" multiplier="112:57" id="1eq-6g-Ive"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -26,6 +30,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFi-DK-kmX">
                                 <rect key="frame" x="102" y="244" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MFi-DK-kmX" secondAttribute="height" multiplier="112:57" id="wek-1Z-K9V"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -34,6 +41,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXZ-FL-ycI">
                                 <rect key="frame" x="102" y="388" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PXZ-FL-ycI" secondAttribute="height" multiplier="112:57" id="E8n-yA-EPT"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -44,11 +54,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MFi-DK-kmX" firstAttribute="height" secondItem="T7h-AO-n7c" secondAttribute="height" id="1TP-Z3-N8t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PXZ-FL-ycI" secondAttribute="bottom" constant="20" id="2Zv-b8-ok9"/>
                             <constraint firstItem="PXZ-FL-ycI" firstAttribute="centerX" secondItem="MFi-DK-kmX" secondAttribute="centerX" id="9d3-dc-wYk"/>
                             <constraint firstItem="MFi-DK-kmX" firstAttribute="top" secondItem="T7h-AO-n7c" secondAttribute="bottom" constant="30" id="AeL-TI-NGa"/>
                             <constraint firstItem="T7h-AO-n7c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Cif-ny-Owu"/>
                             <constraint firstItem="MFi-DK-kmX" firstAttribute="centerX" secondItem="T7h-AO-n7c" secondAttribute="centerX" id="Wo7-Wt-lE5"/>
                             <constraint firstItem="PXZ-FL-ycI" firstAttribute="top" secondItem="MFi-DK-kmX" secondAttribute="bottom" constant="30" id="mJe-k6-IZD"/>
+                            <constraint firstItem="PXZ-FL-ycI" firstAttribute="height" secondItem="MFi-DK-kmX" secondAttribute="height" id="may-3o-HAh"/>
                             <constraint firstItem="T7h-AO-n7c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ugY-sM-Z5d"/>
                         </constraints>
                     </view>
